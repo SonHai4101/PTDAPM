@@ -3,7 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_contact.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_add_product.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_contact.xml" value="0.1" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_home_screen.xml" value="0.25" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_list_product.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_main.xml" value="0.20277777777777778" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_product_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_shopping_cart.xml" value="0.264" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_update_product.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_user_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/item_contact.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/item_laptop_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/item_phone_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/item_rows.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/item_shopping_cart.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/single_item.xml" value="0.1640625" />
       </map>
     </option>
   </component>

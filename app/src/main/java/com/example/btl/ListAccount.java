@@ -10,16 +10,12 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import model.Account;
-import model.Product;
-import sqlite.Sqlite;
-import view.account.RegisterActivity;
-import view.account.UpdateAccount;
-import view.adapter.AccountAdapter;
-import view.adapter.ProductAdapter;
-import view.product.ListProduct;
+import com.example.btl.model.Account;
+import com.example.btl.sqlite.Sqlite;
+import com.example.btl.view.account.RegisterActivity;
+import com.example.btl.view.account.UpdateAccount;
+import com.example.btl.view.adapter.AccountAdapter;
 
 public class ListAccount extends AppCompatActivity {
     Sqlite sqlite = new Sqlite(this, "AppElectronicsDevicesSale.sqlite", null, 1);

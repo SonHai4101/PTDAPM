@@ -16,43 +16,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BTL">
         <activity
-            android:name="view.account.UpdateAccount"
+            android:name=".view.account.UpdateAccount"
             android:exported="false" />
         <activity
             android:name=".ListAccount"
             android:exported="false" />
         <activity
-            android:name="view.Infor"
+            android:name=".view.Infor"
             android:exported="false" />
         <activity
-            android:name="view.Contact"
+            android:name=".view.Contact"
             android:exported="false" />
         <activity
-            android:name="view.payment"
+            android:name=".view.payment"
             android:exported="false" />
         <activity
-            android:name="view.PhoneList"
+            android:name=".view.PhoneList"
             android:exported="false" />
         <activity
-            android:name="view.LaptopList"
+            android:name=".view.LaptopList"
             android:exported="false" />
         <activity
-            android:name="view.product.ListProduct"
+            android:name=".view.product.ListProduct"
             android:exported="false" />
         <activity
-            android:name="view.ProductDetail"
+            android:name=".view.ProductDetail"
             android:exported="false" />
         <activity
-            android:name="view.ShoppingCart"
+            android:name=".view.ShoppingCart"
             android:exported="false" />
         <activity
-            android:name="view.product.AddProduct"
+            android:name=".view.product.AddProduct"
             android:exported="false" />
         <activity
-            android:name="view.user.UserIndex"
+            android:name=".view.user.UserIndex"
             android:exported="false" />
         <activity
-            android:name="view.HomeScreen"
+            android:name=".view.admin.AdminIndex"
+            android:exported="false" />
+        <activity
+            android:name=".view.HomeScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -61,13 +64,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="view.account.RegisterActivity"
+            android:name=".view.account.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name="view.account.LoginActivity"
+            android:name=".view.account.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="view.product.UpdateProduct"
+            android:name=".view.product.UpdateProduct"
             android:exported="false" />
         <activity
             android:name=".UserRegister"

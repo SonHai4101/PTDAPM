@@ -35,4 +35,5 @@
     <string name="listproduct">ListProduct</string>
     <string name="role">Role</string>
     <string name="id">ID</string>
+    <string name="ET_Description">Description</string>
 </resources>

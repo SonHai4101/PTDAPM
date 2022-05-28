@@ -1,26 +1,22 @@
 package com.example.btl;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.Button;
 
-import sqlite.Sqlite;
-import view.product.AddProduct;
-import view.HomeScreen;
-import view.product.ListProduct;
-import view.account.LoginActivity;
-import view.account.RegisterActivity;
-import view.ShoppingCart;
+import com.example.btl.sqlite.Sqlite;
+import com.example.btl.view.HomeScreen;
+import com.example.btl.view.admin.AdminIndex;
+import com.example.btl.view.product.ListProduct;
+import com.example.btl.view.ShoppingCart;
 
 public class MainActivity extends AppCompatActivity {
 
     Sqlite sqlite = new Sqlite(this, "AppElectronicsDevicesSale", null, 1);
-    Button login, register, homescreen, addproduct, cart, listproduct;
+    Button login, account, homescreen, addproduct, cart, listproduct;
 
 
     @Override
@@ -30,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase sqLiteDatabase = sqlite.getReadableDatabase();
         sqlite.onCreate(sqLiteDatabase);
 //        login = (Button) findViewById(R.id.btn_sign_in);
-        register = (Button) findViewById(R.id.btn_sign_up);
+        account = (Button) findViewById(R.id.btn_listaccount);
         homescreen = (Button) findViewById(R.id.btn_home_screen);
         listproduct = (Button) findViewById(R.id.btn_listproduct1);
         cart = (Button) findViewById(R.id.btn_cart);
@@ -60,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     private void ClickHomescreen() {
-        homescreen.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HomeScreen.class)));// chuyen trang home
+        homescreen.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, AdminIndex.class)));// chuyen trang home
     }
 
 
@@ -71,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //    // bắt sự kiện onclick register
     public void ClickRegister() {
-        register.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ListAccount.class)));
+        account.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ListAccount.class)));
     }
 
 

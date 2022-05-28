@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="view.payment"
+    tools:context=".view.payment"
     android:background="@drawable/img_bg_1">
 
     <androidx.appcompat.widget.Toolbar

@@ -9,10 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import model.Account;
-import sqlite.Sqlite;
-import view.account.LoginActivity;
-import view.account.RegisterActivity;
+import com.example.btl.model.Account;
+import com.example.btl.sqlite.Sqlite;
+import com.example.btl.view.account.LoginActivity;
 
 public class UserRegister extends AppCompatActivity {
     Sqlite sqlite = new Sqlite(this, "AppElectronicsDevicesSale.sqlite", null, 1);

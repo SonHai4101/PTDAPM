@@ -20,6 +20,7 @@ import com.example.btl.R;
 import com.example.btl.model.Product;
 import com.example.btl.security.SessionManager;
 import com.example.btl.sqlite.Sqlite;
+import com.example.btl.utils.Utils;
 import com.example.btl.view.adapter.MenuAdapter;
 import com.example.btl.view.adapter.UserAdapter;
 import com.google.android.material.navigation.NavigationView;
@@ -155,6 +156,9 @@ public class UserIndex extends AppCompatActivity {
         navigationView = findViewById(R.id.navigationview);
         drawerLayout = findViewById(R.id.drawerlayout);
 
+        if (Utils.manggiohang == null){
+            Utils.manggiohang = new ArrayList<>();
+        }
     }
 
     public void viewProduct(String id) {

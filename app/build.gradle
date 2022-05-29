@@ -54,4 +54,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.1'
     implementation 'com.github.fornewid:neumorphism:0.3.2'
     implementation 'com.github.yalantis:ucrop:2.2.6'
+
+    // bradge
+    implementation 'com.nex3z:notification-badge:1.0.4'
 }

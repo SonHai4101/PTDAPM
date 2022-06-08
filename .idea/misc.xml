@@ -3,13 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.205" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/drawable/ic_baseline_add_location_24.xml" value="0.205" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/drawable/ic_cart_24.xml" value="0.212" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/acount_row.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_add_product.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_contact.xml" value="0.1" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_contact.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_home_screen.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_list_product.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_main.xml" value="0.20277777777777778" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_product_detail.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_shopping_cart.xml" value="0.264" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_update_product.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/activity_user_register.xml" value="0.25416666666666665" />
@@ -19,7 +24,8 @@
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/item_phone_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/item_rows.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/item_shopping_cart.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/single_item.xml" value="0.1640625" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/layout/single_item.xml" value="0.264" />
+        <entry key="..\:/Users/ADMIN/Documents/GitHub/New folder/PTDAPM/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.205" />
       </map>
     </option>
   </component>

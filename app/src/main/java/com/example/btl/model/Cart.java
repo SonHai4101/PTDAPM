@@ -3,7 +3,7 @@ package com.example.btl.model;
 public class Cart {
     String idsp;
     String tensp;
-    long giasp;
+    double giasp;
     byte[] hinhsp;
     int soluong;
 
@@ -26,11 +26,11 @@ public class Cart {
         this.tensp = tensp;
     }
 
-    public long getGiasp() {
+    public double getGiasp() {
         return giasp;
     }
 
-    public void setGiasp(long giasp) {
+    public void setGiasp(double giasp) {
         this.giasp = giasp;
     }
 

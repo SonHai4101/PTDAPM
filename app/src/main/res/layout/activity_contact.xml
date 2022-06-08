@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_marginLeft="5dp"
-                    android:text="Lao công "
+                    android:text="VP Operations"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_marginLeft="5dp"
-                    android:text="Boss: "
+                    android:text="VP Information Technology "
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
@@ -195,9 +195,10 @@
             </LinearLayout>
 
         </LinearLayout>
+
         <LinearLayout
             android:orientation="vertical"
-            android:layout_marginTop="270dp"
+            android:layout_marginTop="260dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
@@ -207,7 +208,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_marginLeft="5dp"
-                    android:text="Bảo vệ: "
+                    android:text="Process Team Lead: "
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
@@ -280,9 +281,188 @@
 
             </LinearLayout>
 
+
+
         </LinearLayout>
 
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="390dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:text="Project Manager:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="abc"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_phone_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="0961104648 "
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_email_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="abc@gmail.com "
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="520dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:text="Software Group Lead: "
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="abc"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_phone_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="0961104648 "
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_email_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="abc@gmail.com "
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 

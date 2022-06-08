@@ -31,20 +31,20 @@ public class ProductDetail extends AppCompatActivity {
     Product product;
     TextView pname, pprice, pdes;
     ImageView imghinhanh;
-    Toolbar toolbar;
+//    Toolbar toolbar;
     NotificationBadge badge;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_detail);
-        Product product = new Product();
+//        Product product = new Product();
         product = sqlite.getProduct(Product.takeid);
         TextView name = (TextView) findViewById(R.id.txt_product_name);
         name.setText(product.getName());
         TextView price = (TextView) findViewById(R.id.txtprice);
         DecimalFormat decimalFormat = new DecimalFormat("###,###,###");
-        price.setText(decimalFormat.format(Double.parseDouble(product.getPrice())));
+        price.setText(decimalFormat.format(Double.parseDouble(product.getPrice())) + "đ");
         TextView des = (TextView) findViewById(R.id.txtmotachitiet);
         des.setText(product.getDes());
         ImageView pimg = (ImageView) findViewById(R.id.imgchitiet);
@@ -63,12 +63,13 @@ public class ProductDetail extends AppCompatActivity {
 
     private void innitView() {
         pname = findViewById(R.id.txt_product_name);
-        pprice = findViewById(R.id.txtprice);
+//        pprice = findViewById(R.id.txtprice);
         pdes = findViewById(R.id.txtmotachitiet);
         btnadd = findViewById(R.id.btn_add_to_cart);
         spinner = findViewById(R.id.spinner);
         imghinhanh = findViewById(R.id.imgchitiet);
 //        toolbar = findViewById(R.id.toobar);
+//        product = new Product();
         badge = findViewById(R.id.menu_sl);
         if (Utils.manggiohang != null){
             badge.setText(String.valueOf(Utils.manggiohang.size()));
@@ -92,13 +93,13 @@ public class ProductDetail extends AppCompatActivity {
             for (int i = 0; i < Utils.manggiohang.size(); i++) {
                 if (Utils.manggiohang.get(i).getIdsp() == product.getId()){
                     Utils.manggiohang.get(i).setSoluong(soluong + Utils.manggiohang.get(i).getSoluong());
-                    long gia = Long.parseLong(product.getPrice()) * Utils.manggiohang.get(i).getSoluong();
+                    double gia = Double.parseDouble(product.getPrice()) * Utils.manggiohang.get(i).getSoluong();
                     Utils.manggiohang.get(i).setGiasp(gia);
                     flag = true;
                 }
             }
             if (flag == false){
-                long gia = Long.parseLong(product.getPrice()) * soluong;
+                double gia = Double.parseDouble(product.getPrice()) * soluong;
                 Cart cart = new Cart();
                 cart.setGiasp(gia);
                 cart.setSoluong(soluong);
@@ -107,9 +108,9 @@ public class ProductDetail extends AppCompatActivity {
                 cart.setHinhsp(product.getImage());
                 Utils.manggiohang.add(cart);
             }
-        } else{
+        } else {
             int soluong = Integer.parseInt(spinner.getSelectedItem().toString());
-            long gia = Long.parseLong(product.getPrice()) * soluong;
+            double gia = Double.parseDouble(product.getPrice()) * soluong;
             Cart cart = new Cart();
             cart.setGiasp(gia);
             cart.setSoluong(soluong);

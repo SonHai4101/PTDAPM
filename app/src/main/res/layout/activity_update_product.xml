@@ -6,19 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".view.product.AddProduct">
 
-    <ImageView
-        android:id="@+id/update_img_product"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839"
-        tools:ignore="ImageContrastCheck"
-        tools:src="@tools:sample/avatars" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        tools:ignore="MissingConstraints">
+
 
     <EditText
         android:id="@+id/update_id"
@@ -90,8 +85,12 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/ET_Description"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:lines="6"
+        android:minLines="5"
+        android:gravity="top|start"
+        android:maxLines="10"
         app:layout_constraintBottom_toTopOf="@+id/btn_update_upload_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,12 +100,25 @@
         android:id="@+id/btn_update_upload_image"
         android:layout_width="247dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="116dp"
         android:text="@string/Bt_Upload"
         app:layout_constraintBottom_toTopOf="@+id/btn_update_product"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/update_img_product"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.839"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/btn_update_product"
@@ -119,5 +131,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

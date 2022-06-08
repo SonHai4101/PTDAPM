@@ -19,19 +19,30 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </androidx.appcompat.widget.Toolbar>
-    <ImageView
-        android:id="@+id/img_product"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:contentDescription="TODO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812"
-        tools:ignore="ImageContrastCheck"
-        tools:src="@tools:sample/avatars" />
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/tb_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:scrollbars="vertical">
+
+        <EditText
+            android:id="@+id/edit_txt_id"
+            android:layout_width="283dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="25dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/ET_ID"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            app:layout_constraintBottom_toTopOf="@+id/edit_txt_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/edit_txt_name"
@@ -45,22 +56,6 @@
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/edit_txt_quantity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="DuplicateSpeakableTextCheck" />
-
-    <EditText
-        android:id="@+id/edit_txt_id"
-        android:layout_width="283dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="25dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/ET_ID"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#757575"
-        app:layout_constraintBottom_toTopOf="@+id/edit_txt_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="DuplicateSpeakableTextCheck" />
@@ -104,7 +99,12 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/ET_Description"
-        android:inputType="textPersonName"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:lines="6"
+        android:minLines="5"
+        android:gravity="top|start"
+        android:maxLines="10"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_add_upload_image"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,12 +115,25 @@
         android:id="@+id/btn_add_upload_image"
         android:layout_width="247dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="108dp"
         android:text="@string/Bt_Upload"
         app:layout_constraintBottom_toTopOf="@+id/btn_add_new_product"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.812"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/btn_add_new_product"
@@ -134,4 +147,5 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

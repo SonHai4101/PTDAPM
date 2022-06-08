@@ -72,6 +72,8 @@ public class HomeScreen extends AppCompatActivity {
         }
     }
 
+    
+
     // bat su kien vao list
     private void getEventClick() {
         listViewTrangChu.setOnItemClickListener(new AdapterView.OnItemClickListener() {

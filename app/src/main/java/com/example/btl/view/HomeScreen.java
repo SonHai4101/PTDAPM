@@ -6,9 +6,13 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -16,6 +20,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.bumptech.glide.Glide;
@@ -55,6 +60,13 @@ public class HomeScreen extends AppCompatActivity {
         Anhxa();
         ActionBar();
         ActionViewFlipper();
+
+//        if (isConnected(this)){
+//            Toast.makeText(getApplicationContext(), "ok", Toast.LENGTH_LONG).show();
+//        } else {
+//            Toast.makeText(getApplicationContext(), "khong co internet", Toast.LENGTH_LONG).show();
+//        }
+
         ActionMenu();
         getEventClick();
         listView = findViewById(R.id.listview_item);
@@ -72,7 +84,16 @@ public class HomeScreen extends AppCompatActivity {
         }
     }
 
-    
+//    private boolean isConnected (Context context){
+//        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+//        NetworkInfo wifi = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+//        NetworkInfo mobile = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+//        if ((wifi != null && wifi.isConnected() || (mobile != null && mobile.isConnected()))) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+//    }
 
     // bat su kien vao list
     private void getEventClick() {

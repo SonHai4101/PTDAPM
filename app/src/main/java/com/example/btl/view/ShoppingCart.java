@@ -2,57 +2,76 @@ package com.example.btl.view;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import com.example.btl.R;
+import com.example.btl.model.Cart;
 import com.example.btl.model.Product;
 import com.example.btl.sqlite.Sqlite;
+import com.example.btl.utils.Utils;
+import com.example.btl.view.adapter.CartAdapter;
 import com.example.btl.view.product.ListProduct;
 
+import java.util.List;
+
+import okhttp3.internal.Util;
+
 public class ShoppingCart extends AppCompatActivity {
-    Sqlite sqlite = new Sqlite(this, "AppElectronicsDevicesSale.sqlite", null, 1);
-    TextView name, price;
-    ImageView cartproduct;
+    TextView giohangtrong, tongtien;
+    Toolbar toolbar;
+    RecyclerView recyclerView;
     Button btnmuahang;
+    CartAdapter adapter;
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_cart);
-        Product product = sqlite.getProduct(Product.takeid);
-        name = findViewById(R.id.cart_nameProduct);
-        name.setText(product.getName());
-        price = findViewById(R.id.cart_price);
-        price.setText("Price: " + product.getPrice() + " VND");
-        cartproduct = (ImageView) findViewById(R.id.cart_image);
-        Bitmap bitmap = BitmapFactory.decodeByteArray(product.getImage(), 0, product.getImage().length);
-        cartproduct.setImageBitmap(bitmap);
-        btnmuahang = (Button) findViewById(R.id.btnmuahang);
-        ClickMuaHang();
+        initView();
+        initControl();
     }
 
-    public void dialogDeleteProduct(String id) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Do you want to delete this product ?");
-        builder.setPositiveButton("Yes", (dialogInterface, i) -> {
-            sqlite.queryData("DELETE FROM PRODUCT WHERE P_ID LIKE '" + id + "'");
-            sqlite.getAllProduct();
-            startActivity(new Intent(ShoppingCart.this, ShoppingCart.class));
+    private void initControl() {
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
         });
-        builder.setNegativeButton("No", (dialogInterface, i) -> {
-        });
-        builder.show();
+
+        recyclerView.setHasFixedSize(true);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        if (Utils.manggiohang.size() == 0){
+            giohangtrong.setVisibility(View.VISIBLE);
+        } else {
+            adapter = new CartAdapter(getApplicationContext(), Utils.manggiohang);
+            recyclerView.setAdapter(adapter);
+        }
+
     }
 
-    private void ClickMuaHang() {
-        btnmuahang.setOnClickListener(v -> startActivity(new Intent(ShoppingCart.this, payment.class)));// chuyen trang Cart
+    private void initView() {
+        giohangtrong = findViewById(R.id.txtgiohangtrong);
+        toolbar = findViewById(R.id.toolbarcart);
+        recyclerView = findViewById(R.id.recyclerviewcart);
+        tongtien = findViewById(R.id.txttongtien);
+        btnmuahang = findViewById(R.id.btnmuahang);
     }
 
 
